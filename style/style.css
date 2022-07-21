@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;900&family=Work+Sans:wght@400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: -#777;
+  padding: 1.875rem;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 195, 255, 0.671),
+      skyblue
+    ),
+    url(../img/island.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 85%);
+
+}
+.logo-box {
+  display: inline-block;
+  background-color: white;
+  height: 3rem;
+  border-radius: 5px;
+  padding: 8px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.logo {
+  height: 2rem;
+}
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  backface-visibility: hidden; 
+}
+.heading-primary-main {
+  display: block;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 2rem;
+  padding-bottom: 20px;
+  animation: moveInRight 1s ease-in-out;
+}
+.heading-primary-main::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 37.5rem;
+  background-color: #1864ab;
+}
+.heading-primary-sub {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1.3rem;
+  animation: moveInLeft 1s ease-in-out;
+}
+
+.btn:link,
+btn:visited {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+  padding: 8px 1.4rem;
+  border-radius: 8px;
+  letter-spacing: 0.25rem;
+  transition: all 0.5s;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #1971c2;
+}
+
+/* animation */
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+  opacity: 1;
+  transform: translate(0);
+  }
+
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+  opacity: 1;
+  transform: translate(0);
+  }
+}
