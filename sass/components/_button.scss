@@ -1,0 +1,48 @@
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 8px 1.4rem;
+    border-radius: 8px;
+    letter-spacing: 0.25rem;
+    transition: all 0.5ss;
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba($color-black, 0.2);
+    }
+    &:active {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 10px rgba($color-black, 0.2);
+    }
+  }
+}
+
+.btn--white {
+  background-color: #fff;
+  color: $color-blue-text;
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font;
+    text-decoration: none;
+    color: $color-primary;
+    border-bottom: 1px solid $color-primary;
+    display: inline-block;
+    padding: 3px;
+    transition: all 2s;
+    &:hover {
+      background-color: $color-primary;
+      color: white;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      transform: translateY(-2px);
+    }
+    &:active {
+      box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .15);
+    }
+  }
+}

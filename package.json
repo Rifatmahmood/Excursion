@@ -1,0 +1,22 @@
+{
+  "name": "excursion",
+  "version": "1.0.0",
+  "description": "Landing page for excursion",
+  "main": "script.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rifatmahmood/Excursion.git"
+  },
+  "author": "rifat",
+  "license": "ISC",
+  "bugs": { 
+    "url": "https://github.com/Rifatmahmood/Excursion/issues"
+  },
+  "homepage": "https://github.com/Rifatmahmood/Excursion#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

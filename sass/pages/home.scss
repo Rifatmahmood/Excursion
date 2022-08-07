@@ -1,0 +1,14 @@
+.section-about{
+ background-color: $color-gray-2;
+ padding: 15rem 5rem;
+ margin-top: -20vh;
+}
+.section-features{
+ padding: 13rem 5rem;
+ background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.671),
+      $color-primary-dark),
+    url(/img/section-feature-background.jpg);
+  background-size: cover;
+}
